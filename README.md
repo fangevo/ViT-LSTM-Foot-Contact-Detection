@@ -1,0 +1,1 @@
+# ViT-LSTM-Foot-Contact-Detection
