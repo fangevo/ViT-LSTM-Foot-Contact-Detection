@@ -2,7 +2,7 @@ import os
 import glob
 import numpy as np
 from PIL import Image
-
+import argparse
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -354,23 +354,28 @@ def predict_sequence_all_frames(image_folder, pose_file, model, transform, devic
     print(f"Predicted labels have been saved to {output_file}")
 
 if __name__ == "__main__":
-    #Uncomment for training
-    train()  
+    parser = argparse.ArgumentParser(description="Train or predict with ViT-LSTM model")
+    parser.add_argument('--mode', type=str, choices=['train', 'predict'], required=True,
+                        help="Mode to run: 'train' or 'predict'")
+    args = parser.parse_args()
 
-    # Uncomment for prediction
-    # test_root = "data/test"
-    # test_video_dirs = sorted(glob.glob(os.path.join(test_root, "*")))
-    # model.load_state_dict(torch.load("weight/best_vit_lstm_classifier.pth", map_location=device))
-    # for video_dir in test_video_dirs:
-    #     video_name = os.path.basename(video_dir) 
-    #     output_file = f"output/predicted_labels_{video_name}.npy"
-    #     predict_sequence_all_frames(
-    #         image_folder=video_dir,
-    #         pose_file=f"data/normalized_2d_poses/{video_name}_2D_annotation_normalized.npy",
-    #         model=model,
-    #         transform=val_transform,
-    #         device=device,
-    #         output_file=output_file
-    #     )
+    if args.mode == "train":
+        train()  
 
-    # print("Prediction completed for all test videos.")
+    elif args.mode == "predict":
+        test_root = "data/test"
+        test_video_dirs = sorted(glob.glob(os.path.join(test_root, "*")))
+        model.load_state_dict(torch.load("weight/best_vit_lstm_classifier.pth", map_location=device))
+        for video_dir in test_video_dirs:
+            video_name = os.path.basename(video_dir) 
+            output_file = f"output/predicted_labels_{video_name}.npy"
+            predict_sequence_all_frames(
+                image_folder=video_dir,
+                pose_file=f"data/normalized_2d_poses/{video_name}_2D_annotation_normalized.npy",
+                model=model,
+                transform=val_transform,
+                device=device,
+                output_file=output_file
+            )
+
+        print("Prediction completed for all test videos.")
