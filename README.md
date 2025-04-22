@@ -15,7 +15,7 @@ The project proposes a hybrid Vision Transformer (ViT) and Bidirectional LSTM (B
 
 ## Method
 **Distribution of 19 joint points:**
-![wechat_2025-04-22_183319_969](https://github.com/user-attachments/assets/2e0d2b7f-1cc7-4327-8964-0ea358e5714a)
+<img src="https://github.com/user-attachments/assets/2e0d2b7f-1cc7-4327-8964-0ea358e5714a" alt="wechat_2025-04-22_183319_969" width="300">
 
 **Label Definition:**
 ![wechat_2025-04-22_182935_943](https://github.com/user-attachments/assets/222e8b37-5b8d-4318-a0b0-f7a30ae5ea8d)
