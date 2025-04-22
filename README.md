@@ -32,3 +32,10 @@ Put the data folder in ./
 
 **Weight**: https://drive.google.com/file/d/1fAFRAi2CZWLprRo158a0964dfXdIXCnX/view?usp=drive_link    
 Put the model weight file in ./weight/
+
+**Environment**: This project was developed using Python 3.10.16 and Pytorch 2.6.0+cu118. You can choose the version of PyTorch that suits your GPU driver. 
+
+
+
+
+
