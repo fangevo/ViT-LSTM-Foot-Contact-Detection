@@ -26,6 +26,11 @@ The project proposes a hybrid Vision Transformer (ViT) and Bidirectional LSTM (B
 $B$: batch size, $T$: sequence length, $C$: number of channels, $H$: frame height, $W$: frame width, $F_p$: pose feature dimension, $F_v$: ViT feature dimension, $D_h$: hidden size (per direction), $N$: output classes.
 
 ## Installation
+**Clone the repository:** 
+```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git) # Replace with your repo URL
+    cd your-repo-name
+```
 
 **Dataset** (Frame sequences extracted from 30 video clips): https://drive.google.com/file/d/13hf_kXzegg2eVV8V31Rg6dn1gqT6wMtb/view?usp=sharing      
 Put the data folder in ./
