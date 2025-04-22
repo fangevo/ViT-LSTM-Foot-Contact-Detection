@@ -14,8 +14,8 @@ The project proposes a hybrid Vision Transformer (ViT) and Bidirectional LSTM (B
 * **Robust Training Strategy:** Employs pose normalization, data augmentation, 5-fold cross-validation, and weighted cross-entropy loss to handle data limitations and class imbalance.
 
 ## Method
-**Distribution of 19 joint points:**
-\\
+**Distribution of 19 joint points:**<br>
+
 <img src="https://github.com/user-attachments/assets/2e0d2b7f-1cc7-4327-8964-0ea358e5714a" alt="wechat_2025-04-22_183319_969" width="300">
 
 **Label Definition:**
