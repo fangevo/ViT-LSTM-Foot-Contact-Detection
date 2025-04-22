@@ -26,10 +26,12 @@ The project proposes a hybrid Vision Transformer (ViT) and Bidirectional LSTM (B
 $B$: batch size, $T$: sequence length, $C$: number of channels, $H$: frame height, $W$: frame width, $F_p$: pose feature dimension, $F_v$: ViT feature dimension, $D_h$: hidden size (per direction), $N$: output classes.
 
 ## Installation
+**Environment**: This project was developed using Python 3.10.16 and Pytorch 2.6.0+cu118. You can choose the version of PyTorch that suits your GPU driver. 
+
 **Clone the repository:** 
 ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git) # Replace with your repo URL
-    cd your-repo-name
+    git clone https://github.com/fangevo/ViT-LSTM-Foot-Contact-Detection.git
+    cd ViT-LSTM-Foot-Contact-Detection
 ```
 
 **Dataset** (Frame sequences extracted from 30 video clips): https://drive.google.com/file/d/13hf_kXzegg2eVV8V31Rg6dn1gqT6wMtb/view?usp=sharing      
@@ -38,9 +40,17 @@ Put the data folder in ./
 **Weight**: https://drive.google.com/file/d/1fAFRAi2CZWLprRo158a0964dfXdIXCnX/view?usp=drive_link    
 Put the model weight file in ./weight/
 
-**Environment**: This project was developed using Python 3.10.16 and Pytorch 2.6.0+cu118. You can choose the version of PyTorch that suits your GPU driver. 
+**Train:** 
+```bash
+    python main.py --mode train
+```
 
+**Prediction:** 
+```bash
+    python main.py --mode predict
+```
 
-
+**Some useful tools:** 
+The scripts in the utilis folder include a visual annotation tool, confusion matrix computation, ankle image cropping, and pose normalization. Using these scripts requires manually modifying the file paths.
 
 
