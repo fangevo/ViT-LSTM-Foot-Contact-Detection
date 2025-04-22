@@ -16,7 +16,7 @@ The project proposes a hybrid Vision Transformer (ViT) and Bidirectional LSTM (B
 ## Method
 **Distribution of 19 joint points:**<br>
 
-<img src="https://github.com/user-attachments/assets/2e0d2b7f-1cc7-4327-8964-0ea358e5714a" alt="wechat_2025-04-22_183319_969" width="300">
+<img src="https://github.com/user-attachments/assets/2e0d2b7f-1cc7-4327-8964-0ea358e5714a" alt="wechat_2025-04-22_183319_969" width="400">
 
 **Label Definition:**
 ![wechat_2025-04-22_182935_943](https://github.com/user-attachments/assets/222e8b37-5b8d-4318-a0b0-f7a30ae5ea8d)
@@ -31,4 +31,4 @@ $B$: batch size, $T$: sequence length, $C$: number of channels, $H$: frame heigh
 Put the data folder in ./
 
 **Weight**: https://drive.google.com/file/d/1fAFRAi2CZWLprRo158a0964dfXdIXCnX/view?usp=drive_link    
-Put it in ./weight/
+Put the model weight file in ./weight/
