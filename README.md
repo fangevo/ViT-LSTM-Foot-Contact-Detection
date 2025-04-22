@@ -14,15 +14,20 @@ The project proposes a hybrid Vision Transformer (ViT) and Bidirectional LSTM (B
 * **Robust Training Strategy:** Employs pose normalization, data augmentation, 5-fold cross-validation, and weighted cross-entropy loss to handle data limitations and class imbalance.
 
 ## Method
-**Label Definition**
+**Distribution of 19 joint points:**
+![wechat_2025-04-22_183319_969](https://github.com/user-attachments/assets/2e0d2b7f-1cc7-4327-8964-0ea358e5714a)
+
+**Label Definition:**
 ![wechat_2025-04-22_182935_943](https://github.com/user-attachments/assets/222e8b37-5b8d-4318-a0b0-f7a30ae5ea8d)
 
-**Model Architecture**
+**Model Architecture:**
 ![s (1)](https://github.com/user-attachments/assets/46e446a2-5b1e-46e1-ad00-76655f493146)
 $B$: batch size, $T$: sequence length, $C$: number of channels, $H$: frame height, $W$: frame width, $F_p$: pose feature dimension, $F_v$: ViT feature dimension, $D_h$: hidden size (per direction), $N$: output classes.
 
 ## Installation
 
-**Dataset** (Frame sequences extracted from 30 video clips): https://drive.google.com/file/d/13hf_kXzegg2eVV8V31Rg6dn1gqT6wMtb/view?usp=sharing      Put the data folder in ./
+**Dataset** (Frame sequences extracted from 30 video clips): https://drive.google.com/file/d/13hf_kXzegg2eVV8V31Rg6dn1gqT6wMtb/view?usp=sharing      
+Put the data folder in ./
 
-**Weight**: https://drive.google.com/file/d/1fAFRAi2CZWLprRo158a0964dfXdIXCnX/view?usp=drive_link    Put it in ./weight/
+**Weight**: https://drive.google.com/file/d/1fAFRAi2CZWLprRo158a0964dfXdIXCnX/view?usp=drive_link    
+Put it in ./weight/
