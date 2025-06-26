@@ -11,8 +11,8 @@ Yangtao Fang, Qi Gan, Sao Mai Nguyen
 <div align="center">
 IP Paris, Telecom Paris, ENSTA 
 </div>
-
-
+<br>
+<br>
 The project proposes a hybrid Vision Transformer (ViT) and Bidirectional LSTM (BiLSTM) model with an attention-based fusion mechanism to accurately classify the degree of foot-ground contact during the long jump, using video captured at only 25 frames per second.
 
 **Highlights:** Achieved **91.87%** classification accuracy and **8.18 ms/frame** processing speed on a resource-constrained GPU (8G VRAM, 321 TOPS).
