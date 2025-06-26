@@ -1,6 +1,8 @@
 # ViT-LSTM-Foot-Contact-Detection
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-**Authors: Yangtao Fang (IP Paris), Qi Gan (LTCI, Telecom Paris), Sao Mai Nguyen (U2IS, ENSTA)**
+
+ <center>**Authors: Yangtao Fang (IP Paris), Qi Gan (LTCI, Telecom Paris), Sao Mai Nguyen (U2IS, ENSTA)** </center>
+
 The project proposes a hybrid Vision Transformer (ViT) and Bidirectional LSTM (BiLSTM) model with an attention-based fusion mechanism to accurately classify the degree of foot-ground contact during the long jump, using video captured at only 25 frames per second.
 
 **Highlights:** Achieved **91.87%** classification accuracy and **8.18 ms/frame** processing speed on a resource-constrained GPU (8G VRAM, 321 TOPS).
@@ -54,4 +56,20 @@ Put the model weight file in ./weight/
 **Some useful tools:** 
 The scripts in the utilis folder include a visual annotation tool, confusion matrix computation, ankle image cropping, and pose normalization. Using these scripts requires manually modifying the file paths.
 
+## Reference
+```bash
+@misc{fang:hal-05090038,
+  TITLE = {{Computer vision-based foot contact detection for long jump using a monocular normal-speed camera}},
+  AUTHOR = {Fang, Yangtao and Gan, Qi and Nguyen, Sao Mai},
+  URL = {https://hal.science/hal-05090038},
+  NOTE = {Poster},
+  HOWPUBLISHED = {{Journ{\'e}e commune EGC/AFIA Gestion et Analyse de donn{\'e}es Sportives (GAS'25)}},
+  ORGANIZATION = {{Nida Meddouri and Albrecht Zimmermann and Cl{\'e}ment Iphar and Aur{\'e}lie Leborgne and Lo{\"i}c Salmon}},
+  YEAR = {2025},
+  MONTH = May,
+  PDF = {https://hal.science/hal-05090038v1/file/GAS%2725_GAST_Fang_et_al.pdf},
+  HAL_ID = {hal-05090038},
+  HAL_VERSION = {v1},
+}
+```
 
