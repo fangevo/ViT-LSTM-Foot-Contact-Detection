@@ -1,7 +1,7 @@
 # ViT-LSTM-Foot-Contact-Detection
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
- <center>**Authors: Yangtao Fang (IP Paris), Qi Gan (LTCI, Telecom Paris), Sao Mai Nguyen (U2IS, ENSTA)** </center>
+<center>Authors: Yangtao Fang (IP Paris), Qi Gan (LTCI, Telecom Paris), Sao Mai Nguyen (U2IS, ENSTA)</center>
 
 The project proposes a hybrid Vision Transformer (ViT) and Bidirectional LSTM (BiLSTM) model with an attention-based fusion mechanism to accurately classify the degree of foot-ground contact during the long jump, using video captured at only 25 frames per second.
 
