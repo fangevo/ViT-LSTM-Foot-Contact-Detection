@@ -56,7 +56,7 @@ Put the model weight file in ./weight/
 **Some useful tools:** 
 The scripts in the utilis folder include a visual annotation tool, confusion matrix computation, ankle image cropping, and pose normalization. Using these scripts requires manually modifying the file paths.
 
-## Reference
+## Citation
 ```bash
 @misc{fang:hal-05090038,
   TITLE = {{Computer vision-based foot contact detection for long jump using a monocular normal-speed camera}},
